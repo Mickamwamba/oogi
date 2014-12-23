@@ -5,17 +5,17 @@
 	class Articles{
 
 		const TABLE_NAME="articles";
-		public static $COL_ID = "id";
-		public static $COL_TITLE = "title";
-		public static $COL_CONTENT = "content";
-		public static $COL_POSTED = "posted";
-		public static $COL_VIEWS = "views";
+		const COL_ID = "id";
+		const COL_TITLE = "title";
+		const COL_CONTENT = "content";
+		const COL_POSTED = "posted";
+		const COL_VIEWS = "views";
 
 		public static function getArticleById($id){
-			if(isset($id &&is_int($id))){
+			if(isset($id) &&is_int($id)){
 				$where = self::COL_ID."=$id";
 			$article = Database::select(self::TABLE_NAME,NULL,$where);
-			return $allArticles;
+			return $article;
 			}
 			else{
 				return false;
@@ -28,26 +28,23 @@
 			return $allArticles;
 		}
 
-		public static function getArticlesByCount($count=10,$start=0,$order='DESC'){
-			if(isset($count)&&is_int($count)){
-				$allArticles = Database::select(self::TABLE_NAME,NULL,NULL,$count,$order);
+		public static function getArticlesByCount($count=10,$start=0,$order='title'){
+				$allArticles = Database::select(self::TABLE_NAME,NULL,NULL,$count,$start,$order);
 				return $allArticles;
-			}
-			else{
-				return false;
-			}
+			
 		}
 
-		public static function getArticlesByViews($count=10,$start=0,$order='DESC'){
-			if (isset($count)&&is_int($count)) 
-				 $where = self::COL_VIEWS."=views";
-				$articles = Database::select(self::TABLE_NAME, NULL,where,$count,$order);
+		public static function getArticlesByViews($count=10,$start=0,$order='views'){
+			if (isset($count)&&is_int($count)){
+				$articles = Database::select(self::TABLE_NAME, NULL,NULL,$count,$start,$order);
 				return $articles;
 			}
+			else echo "sdfsfgsdgfs";
+		}
 		
 
 		public static function addArticle($title,$content,$posted,$views=0){
-			$values = array(self::COL_TITLE =>$title ,
+			$values = array(self::COL_TITLE=>$title ,
 				self::COL_CONTENT =>$content,
 				self::COL_POSTED =>$posted,
 				self::COL_VIEWS =>$views,
@@ -61,16 +58,16 @@
 
 			if(isset($id)){
 				$where = self::COL_ID."=$id";
-				$deleted_article = Database::delete(self::TABLE_NAME,$where);
-				return $deleted_article;
+			      
+				return  (Database::delete(self::TABLE_NAME,$where)); 
 			}
 			else return false;
 		}
 
 		public static function updateArticle($id,$values){
-			if(isseet($id) && is_array($values)){
+			if(isset($id) && is_array($values)){
 			$where = self::COL_ID."=$id";
-				return (Database::update(self::TABLE_NAME,$values));
+				return (Database::update(self::TABLE_NAME,$values,$where));
 			}
 			else{
 				return false;
@@ -82,30 +79,36 @@
 	class Images{
 
 		const TABLE_NAME="article_images";
-		public static $COL_ID="id";
-		public static $COL_IMAGE="image";
-		public static $COL_ARTICLE_ID="article_id";
+		const COL_ID="id";
+		const COL_IMAGE="image";
+		const COL_ARTICLE_ID="article_id";
 
-		public static function CountArticleImages($article_id){
+		public static function countArticleImages($article_id){
 			if(isset($article_id)){
 			$where = self::COL_ID."=$article_id";
-			$allImages = Database::select(self::TABLE_NAME,self::COL_IMAGE,$where);
+			$columns = array(self::COL_IMAGE);
+
+			$allImages = Database::select(self::TABLE_NAME,$columns,$where);
 			if (isset($allImages)) {
 				return count($allImages);
 			}
 			else{
 				return 0;
 			}
-			else{
+			
+		}
+		else{
 				return false;
 			}
 		}
 
 
+
 		public static function getArticleImages($article_id){
 			if(isset($article_id)){
+				$columns = array(self::COL_IMAGE);
 				$where = self::COL_ID."=$article_id";
-			return Database::select(self::TABLE_NAME,self::COL_IMAGE,$where);
+			return Database::select(self::TABLE_NAME,$columns,$where);
 		}
 	}
 
@@ -144,4 +147,6 @@
 	}
 }
 
+
+var_dump(Articles::getArticlesByViews());
 ?>

@@ -82,7 +82,7 @@ class Database{
 		}
 		$where=$where==null?"1=1":$where;
 		$orderstmt=$orderstmt==null?"":"ORDER BY ".$orderstmt;
-		$query="SELECT $cols FROM $table WHERE $where LIMIT $count OFFSET $start $orderstmt";
+		$query="SELECT $cols FROM $table WHERE $where $orderstmt LIMIT $count OFFSET $start";
 		if(!($result=mysql_query($query))) return false; 
 		$output=array();
 		while ($row=mysql_fetch_assoc($result)){
