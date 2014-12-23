@@ -1,0 +1,19 @@
+.operation-description-wrapper{
+	padding: 1%;
+}
+.operation-summary-wrapper{
+	border: 1px solid silver;
+	padding: 2px;
+	margin-bottom: 35px;
+	border-radius: 7px;
+}
+.company-logo img{
+	width: 100%;
+	padding: 1px;
+	border: 2px solid silver;
+	height: 90px;
+}
+.subtitle{
+	font-size: 15px;
+	color: rgb(18, 26, 168);
+}

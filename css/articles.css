@@ -1,0 +1,55 @@
+.articles-container{
+	padding: 2%;
+}
+.articles-container h3{
+	
+}
+.article-image{
+	width:100px;
+	display: inline-block;
+}
+
+.article-image img{
+
+	width: 100%;
+    height: 50px;
+}
+.postedon{
+	color: rgb(202, 146, 100);
+	float: right;
+	font-weight: 10;
+}
+
+/*********88888888888888888888 
+css for styling specic article
+*/
+.article-header{
+text-align: left;
+}
+.article-header h1{
+	text-align: left;
+	color: rgb(51, 51, 118);
+}
+
+.postedon2{
+	color: rgb(202, 146, 100);
+	text-align: left;
+	font-weight: 10;
+}
+
+#all-articles-wrapper{
+	margin-top: 50px;
+
+}
+.article-wrapper{
+	padding: 2%;
+}
+
+.morearticle-image img{
+	width: 100%;
+	border: 1px solid silver;
+	padding: 1px;
+}
+a:hover{
+	text-decoration: none;
+}

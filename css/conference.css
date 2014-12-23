@@ -1,0 +1,61 @@
+.conference-summary{
+	border: 1px solid silver;
+	width: 30%;
+	padding: 1%;
+}
+.conference-wrapper h3{
+	text-align: center;
+}
+.conference-wrapper{
+	padding: 2%;
+}
+.conference-description{
+	padding: 2%;
+}
+.conference-description>h4{
+	background-color: rgb(228, 228, 255);
+    color: rgb(13, 117, 147);
+    font-size: 20px;
+    margin: 10px 0px 16px 0px;
+}
+.expected-companies{
+	padding: 2%;
+}
+.expected-companies h4{
+	color: rgb(128, 121, 232);
+	font-size: 20px;;
+	border-bottom: 1px solid  silver;
+}
+.comp-image{
+   margin: 10px 0px 16px 0px;
+
+}
+.comp-image img{
+	height: 100px;
+ 	width: 100%;
+	vertical-align: top;
+
+}
+.back-button{
+ float: right;	
+ background-color: black;
+ color: white;
+ padding: 2px;
+	
+}
+.conference-image img{
+	width: 100%;
+	border: 1px solid silver;
+	padding: 1px;
+}
+.moreconferences-header{
+margin: 4px 0px 4px 0px;
+
+}
+.moreconferences h3{
+	text-align: left;
+	color: 
+}
+a:hover{
+ text-decoration: none;
+}

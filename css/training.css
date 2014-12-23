@@ -1,0 +1,23 @@
+.training-description-wrapper{
+	padding: 2%;
+}
+
+.training-header{
+	border: 1px solid silver;
+	padding: 2px;
+	margin-bottom: 35px;
+	border-radius: 7px;
+}
+
+.training-description{
+	padding: 1%;
+}
+.resource-image img{
+	width: 100%;
+	padding: 1px;
+	border: 1px solid silver;
+
+}
+.resources-wrapper{
+	padding: 1%;
+}

@@ -1,0 +1,31 @@
+.news-wrapper{
+	padding: 2%;
+
+}
+.news-header{
+	margin-bottom: 25px;
+}
+.news-header h2{
+	color: rgb(47, 47, 166);
+}
+.postedon{
+	color: gray;
+}
+.news-image img{
+	width: 100%;
+	border: 1px solid silver;
+	padding: 1px;
+}
+.morenews-header{
+margin: 4px 0px 4px 0px;
+
+}
+a:hover{
+	text-decoration: none;
+}
+
+.topbutton{
+ display: block;
+ margin: 5px;
+ float: right;
+}
