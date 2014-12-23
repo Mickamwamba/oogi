@@ -93,7 +93,8 @@
 	border-top: 40px rgba(0, 0, 255, 0) solid;
 }
 
-
+<<<<<<< HEAD
+=======
 #partner-wrapper{
 	border: 0px solid silver;
 	border-radius: 2px;
@@ -139,6 +140,7 @@
 	height: 100%;
 	width: 100%;
 }
+>>>>>>> aeb0685f77b514ae5f42d70582f81ac32188ae89
 
 #content-right .section-header-wrapper{
 	background-color: rgb(255, 255, 255);

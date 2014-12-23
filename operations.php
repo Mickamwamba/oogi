@@ -40,7 +40,11 @@
 								<div class="short-description">
 									<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputateLorem ipsumLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputateLorem ipsumLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputateLorem ipsum </p>
 								</div>
+<<<<<<< HEAD
 								<a href="#"><div class="readmore">Read More</div></a>
+=======
+								<a href="operation.php"><div class="readmore">Read More</div></a>
+>>>>>>> aeb0685f77b514ae5f42d70582f81ac32188ae89
 								</div>
 								</div>
 								</div>
@@ -70,7 +74,11 @@ el=document.getElementById("operations-wrapper");
 el.innerHTML='';
 for(i=0; i< 4; i++){
 
+<<<<<<< HEAD
 	el.innerHTML +='<div class="operation-brief-wrapper"><div class="row operation-brief"><div class="col-sm-12"><div class="media"><a class="pull-left" href="#"><img class="media-object operation-image" src="songosongo.jpeg"></a><div class="media-body"><h3 class="media-heading operation-heading">The Magic of Mtwara Gas</h3><div class="short-description"><p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputateLorem ipsumLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputateLorem ipsumLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputateLorem ipsum </p></div><a href="#"><div class="readmore">Read More</div></a></div></div></div></div></div>';
+=======
+	el.innerHTML +='<div class="operation-brief-wrapper"><div class="row operation-brief"><div class="col-sm-12"><div class="media"><a class="pull-left" href="#"><img class="media-object operation-image" src="songosongo.jpeg"></a><div class="media-body"><h3 class="media-heading operation-heading">The Magic of Mtwara Gas</h3><div class="short-description"><p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputateLorem ipsumLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputateLorem ipsumLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputateLorem ipsum </p></div><a href="operation.php"><div class="readmore">Read More</div></a></div></div></div></div></div>';
+>>>>>>> aeb0685f77b514ae5f42d70582f81ac32188ae89
 }
 </script>
 </html>
