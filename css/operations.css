@@ -1,0 +1,32 @@
+.operations-wrapper{
+	padding: 2%;
+}
+.operation-brief-wrapper{
+	padding: 1%;
+	border:1px solid silver;
+	border-radius: 5px;
+	margin-bottom: 13px;
+}
+.readmore{
+	float: right;
+}
+
+.operation-image{
+	width:170px;
+	display: inline-block;
+	margin-right: 25px;
+	padding: 2px;
+	border: 1px solid gray;
+
+}
+.operation-heading{
+	margin-bottom: 10px;
+}
+
+.operation-summary{
+	
+	border: 1px solid silver;
+	padding: 2px;
+	margin-bottom: 35px;
+	border-radius: 7px;
+}

@@ -1,0 +1,253 @@
+.section-header-wrapper {
+	border: 1px solid transparent;
+}
+#content-left .section-header-wrapper {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid silver;
+	text-align: center;
+	margin: 0 2px;
+
+}
+#trainings-wrapper{
+	min-height: 200px;
+	box-shadow: 0 0 6px silver;
+	border-radius: 2px;
+	text-align: center;
+	padding-top: 10px;
+	margin: 3px;
+}
+
+
+.training-item-wrapper{
+	margin: 8px;
+	border: 0px solid silver;
+	display: inline-block;
+	text-align: left;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.training-img-wrapper{
+	height: 140px;
+	width: 190px;
+	border: 1px solid silver;
+	padding: 3px;
+	background-color: #fff;
+	position: relative;
+}
+.training-heading{
+	background-color: rgba(0, 0, 0, 0.56);
+	position: absolute;
+	color: white;
+	font-weight: bold;
+	font-size: 12px;
+	padding: 4px;
+	left: 2px;
+	right: 2px;
+	bottom: 2px;
+}
+.training-img-wrapper >img{
+	min-height: 100%;
+	max-width: 100%;
+}
+
+.nav-wrapper{
+	border: 1px solid silver;
+	display: inline-block;
+	height: 170px;
+	padding: 5px;
+	border-radius: 6px;
+}
+.training-nav{
+	width:0px;
+	background: transparent;
+	height: 0px;
+	border-radius: 8px;
+	vertical-align: middle;
+	margin-top: 40px;
+}
+
+#partner-wrapper{
+	border: 0px solid silver;
+	border-radius: 2px;
+	background-colora: rgb(248, 248, 248);
+	padding: 10px;
+}
+.partners-header-wrapper{
+	vertical-align: text-bottom;
+	display: inline-block;
+	height: 66px;
+}
+.partner-desc{
+	border: 1px solid silver;
+	border-radius: 3px;
+	padding: 7px;
+	margin: 0 8px 8px;
+	background: white;
+	color: #333;
+	font-size: 14px;
+	text-align: left;
+	display: none;
+}
+
+.partner-item-wrapper{
+	margin: 8px 24px;
+	border: 0px solid silver;
+	display: inline-block;
+	text-align: left;
+	font-weight: bold;
+	font-size: 12px;
+	text-align: center;
+}
+.partner-img-wrapper{
+	height: 63px;
+	width: 92px;
+	border: 0px solid silver;
+	padding: 0px;
+	background-color: #fff;
+	position: relative;
+	margin-bottom: 8px;
+	border-radius: 3px;
+}
+.partner-img-wrapper >img{
+	height: 100%;
+	width: 100%;
+}
+
+#content-right .section-header-wrapper{
+	background-color: rgb(255, 255, 255);
+	margin: 0 2px;
+	border: 1px solid silver;
+}
+
+.upcomming-trainings{
+	min-height: 200px;
+	margin: 3px;
+	border: 0px solid gray;
+}
+
+.upcomming-trainings-item{
+	border: 0px solid silver;
+	box-shadow: 0 0 3px silver;
+	padding: 8px;
+	margin:0px 0px;
+	position: relative;
+	background-color:#fff; 
+}
+.upcomming-trainings-item-left,.upcomming-trainings-item-right{
+	display: inline-block;
+}
+.upcomming-trainings-item-left{
+	width: 60px;
+	position: absolute;
+}
+.upcomming-trainings-item-right{
+	margin-left: 70px;
+}
+.upcomming-trainings-item-left img{
+	width: 100%;
+}
+.upcomming-trainings-item a{
+	font-weight: bold;
+	display: block;
+}
+
+.ut-details{
+	color: gray;
+	margin-top: 12px;
+	font-size: 12px;
+}
+
+.book-resources{
+	min-height: 200px;
+	margin: 3px;
+	border: 0px solid gray;
+}
+
+.book-resources-item{
+	border: 0px solid silver;
+	padding: 8px;
+	margin:8px 0px;
+	position: relative; 
+	min-height: 74px;
+	min-width: 296px;
+	box-shadow: 0 0 1px silver;
+	display: block; 
+	width: 48%;
+	display: inline-block;
+}
+.book-resources-item-left,.book-recources-item-right{
+	display: inline-block;
+}
+.book-resources-item-left{
+	width: 60px;
+	position: absolute;
+	overflow: hidden;
+}
+.book-resources-item-right{
+	margin-left: 70px;
+}
+.book-resources-item-left img{
+	width: 100%;
+}
+.book-resources-item a{
+	font-weight: bold;
+	display: block;
+	text-transform: uppercase;
+}
+
+.book-resources-details{
+	color: gray;
+	margin-top: 12px;
+	font-size: 12px;
+}
+#videos-wrapper{
+	border: 0px solid silver;
+	max-height: 330px;
+	overflow: auto;
+	padding: 2px;
+}
+
+.c-video-wrapper{
+	padding: 6px;
+	box-shadow: 0 0 3px silver;
+	margin-top: 25px;
+}
+
+.video-resources{
+	min-height: 200px;
+	margin: 3px;
+	border: 0px solid gray;
+}
+
+.video-resources-item{
+	border: 0px solid silver;
+	padding: 8px;
+	margin:8px 0px;
+	position: relative; 
+	min-height: 74px;
+}
+.video-resources-item-left,.video-recources-item-right{
+	display: inline-block;
+}
+.video-resources-item-left{
+	width: 90px;
+	position: absolute;
+	overflow: hidden;
+}
+.video-resources-item-right{
+	margin-left: 100px;
+}
+.video-resources-item-left img{
+	width: 100%;
+}
+.video-resources-item a{
+	font-weight: bold;
+	display: block;
+}
+
+.video-resources-details{
+	color: gray;
+	margin-top: 3px;
+	font-size: 12px;
+}
