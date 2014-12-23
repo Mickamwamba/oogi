@@ -70,7 +70,10 @@
 		public static function updateArticle($id,$values){
 			if(isseet($id) && is_array($values)){
 			$where = self::COL_ID."=$id";
-				$updated_article = Database::update(self::TABLE_NAME,$values);
+				return (Database::update(self::TABLE_NAME,$values));
+			}
+			else{
+				return false;
 			}
 		}
 
@@ -83,15 +86,62 @@
 		public static $COL_IMAGE="image";
 		public static $COL_ARTICLE_ID="article_id";
 
-		public static function checkArticleImages($id){
-
+		public static function CountArticleImages($article_id){
+			if(isset($article_id)){
+			$where = self::COL_ID."=$article_id";
+			$allImages = Database::select(self::TABLE_NAME,self::COL_IMAGE,$where);
+			if (isset($allImages)) {
+				return count($allImages);
+			}
+			else{
+				return 0;
+			}
+			else{
+				return false;
+			}
 		}
 
-		public static function getArticleImages($id){
-			if(isset($id)){
-			$allImages = Database::select(self::TABLE_NAME,NULL,)
+
+		public static function getArticleImages($article_id){
+			if(isset($article_id)){
+				$where = self::COL_ID."=$article_id";
+			return Database::select(self::TABLE_NAME,self::COL_IMAGE,$where);
 		}
 	}
+
+	public static function deleteArticleImage($image_id){
+		if(isset($image_id)){
+			$where = self::COL_ID."=$image_id";
+			return Database::delete(self::TABLE_NAME,$where);
+		}
+		else {
+			return false;
+		}
 	}
+
+	public static function addArticleImage($article_id,$image){
+		if(isset($article_id)&&isset($image)){
+				$values = array(self::COL_ARTICLE_ID =>$article_id,
+				self::COL_IMAGE =>$image,
+			 );
+
+			return (Database::insert(self::TABLE_NAME,$values));
+		}
+		else{
+			return false;
+		}
+	}
+
+	public static function UpdateArticleImage($article_id,$image_id,$values){
+
+			if(isset($article_id) && isset($image_id)&&is_array($values)){
+			$where = self::COL_ID."=$image_id";
+				return (Database::update(self::TABLE_NAME,$values));
+			}
+			else{
+				return false;
+			}
+	}
+}
 
 ?>

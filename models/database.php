@@ -1,9 +1,9 @@
 <?php
 namespace DB;
 class Database{
-	public static $db="ooig";
+	public static $db="OOGI";
 	public static $username="root";
-	public static $password="tunich";
+	public static $password="";
 	public static $hostname="localhost";
 
 
