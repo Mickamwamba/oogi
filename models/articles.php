@@ -135,11 +135,11 @@
 		}
 	}
 
-	public static function UpdateArticleImage($article_id,$image_id,$values){
+	public static function UpdateArticleImage($image_id,$values){
 
-			if(isset($article_id) && isset($image_id)&&is_array($values)){
+			if(isset($image_id)&&is_array($values)){
 			$where = self::COL_ID."=$image_id";
-				return (Database::update(self::TABLE_NAME,$values));
+				return (Database::update(self::TABLE_NAME,$values,$where));
 			}
 			else{
 				return false;
@@ -148,5 +148,5 @@
 }
 
 
-var_dump(Articles::getArticlesByViews());
+var_dump(Images::countArticleImages(4));
 ?>
